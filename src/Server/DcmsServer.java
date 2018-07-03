@@ -47,9 +47,9 @@ public class DcmsServer {
 		serverRepo.put("LVL", lvlServer);
 		serverRepo.put("DDO", ddoServer);
 		
-		Endpoint endpointMtl = Endpoint.publish("http://localhost:8080/MTL",mtlServer);
-		Endpoint endpointDdo = Endpoint.publish("http://localhost:8080/DDO",lvlServer);
-		Endpoint endpointLvl = Endpoint.publish("http://localhost:8080/LVL",ddoServer);
+		Endpoint endpointMtl = Endpoint.publish("http://localhost:8123/MTL",mtlServer);
+		Endpoint endpointDdo = Endpoint.publish("http://localhost:8123/DDO",lvlServer);
+		Endpoint endpointLvl = Endpoint.publish("http://localhost:8123/LVL",ddoServer);
 		
 		if(endpointMtl.isPublished())
 			System.out.println("MTL web server is published");
