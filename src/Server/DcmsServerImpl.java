@@ -28,7 +28,7 @@ import Models.Teacher;
  */
 @WebService(endpointInterface = "Server.Dcms",portName="DcmsPort",serviceName="DcmsService")
 @SOAPBinding(style = Style.RPC)
-class DcmsServerImpl implements Dcms  {
+public class DcmsServerImpl implements Dcms  {
 	
 
 	LogManager logManager;
